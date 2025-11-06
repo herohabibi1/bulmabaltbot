@@ -8,7 +8,7 @@
   "server": {
     "ip": "mc.leftypvp.net",
     "port": 25565,
-    "version": "1.8.9"
+    "version": "1.21.10"
   },
   
   "position": {
@@ -37,7 +37,6 @@
       "messages": [
         "/skyblock",
         "/Is warp herobestt1 afk"
-       "/bank deposit all"
       ]
     },
 
