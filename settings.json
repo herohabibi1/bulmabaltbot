@@ -7,8 +7,8 @@
 
   "server": {
     "ip": "play.leftypvp.net",
-    "port": 25565,
-    "version": "1.21.4"
+    "port": 8000,
+    "version": "1.21.1"
   },
   
   "position": {
