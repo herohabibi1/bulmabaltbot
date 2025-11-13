@@ -32,22 +32,31 @@ function createBot() {
       setTimeout(() => {
         bot.chat(`/register ${password} ${password}`);
         bot.chat(`/login ${password}`);
-      }, 1000);
+      }, 2000);
     }
 
-    // ✅ Chat messages
+    // ✅ Chat messages (fixed version)
     if (config.utils['chat-messages'].enabled) {
       console.log('[INFO] Chat messages enabled');
       const { messages, repeat, 'repeat-delay': delay } = config.utils['chat-messages'];
-      if (repeat) {
-        let i = 0;
-        setInterval(() => {
-          bot.chat(messages[i]);
-          i = (i + 1) % messages.length;
-        }, delay * 1000);
-      } else {
-        messages.forEach(msg => bot.chat(msg));
-      }
+
+      // Wait a few seconds before starting chat messages (to avoid sending too early)
+      setTimeout(() => {
+        console.log('[INFO] Starting chat messages...');
+        if (repeat) {
+          let i = 0;
+          setInterval(() => {
+            bot.chat(messages[i]);
+            console.log(`[CHAT] Sent: ${messages[i]}`);
+            i = (i + 1) % messages.length;
+          }, delay * 1000); // multiply by 1000 for seconds
+        } else {
+          messages.forEach(msg => {
+            bot.chat(msg);
+            console.log(`[CHAT] Sent: ${msg}`);
+          });
+        }
+      }, 5000);
     }
 
     // ✅ Move to position
@@ -67,6 +76,7 @@ function createBot() {
     }
   });
 
+  // ✅ Chat log
   bot.on('chat', (username, message) => {
     if (config.utils['chat-log']) console.log(`[Chat] <${username}> ${message}`);
   });
