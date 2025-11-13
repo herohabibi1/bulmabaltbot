@@ -36,7 +36,7 @@ function createBot() {
     }
 
     // ✅ Chat messages
-    if (config.utils['chat-messages'].enabled) {
+    if (settings.utils['chat-messages'].enabled) {
       console.log('[INFO] Chat messages enabled');
       const { messages, repeat, 'repeat-delay': delay } = config.utils['chat-messages'];
       if (repeat) {
