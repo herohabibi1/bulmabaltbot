@@ -1,17 +1,13 @@
 {
   "name": "bulmabaltbot",
   "version": "1.0.0",
-  "description": "A simple AFK bot for Minecraft using Mineflayer",
+  "description": "AFK bot for Minecraft",
   "main": "index.js",
   "scripts": {
-    "start": "npm install minecraft-data@3.70.0 mineflayer@4.23.0 minecraft-protocol@1.50.1 --force && node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "4.19.0",
-    "mineflayer": "4.23.0",
-    "mineflayer-pathfinder": "2.6.1",
-    "minecraft-data": "3.70.0",
-    "minecraft-protocol": "1.50.1"
+    "express": "4.19.0"
   },
   "engines": {
     "node": "20.x"
