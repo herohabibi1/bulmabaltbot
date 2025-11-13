@@ -1,18 +1,15 @@
 {
   "name": "bulmabaltbot",
   "version": "1.0.0",
-  "description": "AFK bot for Minecraft",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-  "mineflayer": "github:PrismarineJS/mineflayer",
-  "minecraft-data": "github:PrismarineJS/minecraft-data",
-  "minecraft-protocol": "github:PrismarineJS/node-minecraft-protocol",
-  "mineflayer-pathfinder": "github:PrismarineJS/mineflayer-pathfinder"
-},
-  "engines": {
-    "node": "20.x"
+    "mineflayer": "^4.23.0",
+    "minecraft-data": "^3.69.0",
+    "minecraft-protocol": "^1.50.0",
+    "mineflayer-pathfinder": "^2.4.1"
   }
 }
