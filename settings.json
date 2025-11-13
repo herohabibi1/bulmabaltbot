@@ -33,9 +33,8 @@
       "enabled": true,
       "repeat": true,
       "repeat-delay": 200,
-
       "messages": [
-        "/Is warp herobestt1 afk",
+        "/Is warp herobestt1 afk"
       ]
     },
 
