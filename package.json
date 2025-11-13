@@ -1,15 +1,19 @@
 {
-  "name": "Minecraft Afk Bot",
-  "version": "2.1",
-  "description": "Afk bot for minecraft servers.",
+  "name": "bulmabaltbot",
+  "version": "1.0.0",
+  "description": "A simple AFK bot for Minecraft using Mineflayer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "Lamgerr",
-  "license": "MIT",
   "dependencies": {
     "express": "^4.19.0",
     "mineflayer": "^4.22.0",
-    "mineflayer-pathfinder": "^2.6.1"
+    "mineflayer-pathfinder": "^2.6.1",
+    "minecraft-data": "^3.67.0",
+    "minecraft-protocol": "^1.50.0"
+  },
+  "engines": {
+    "node": "20.x"
   }
+}
