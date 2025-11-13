@@ -17,13 +17,13 @@ app.listen(8000, () => {
 });
 
 function createBot() {
-   const bot = mineflayer.createBot({
+  const bot = mineflayer.createBot({
       username: config['bot-account']['username'],
       password: config['bot-account']['password'],
       auth: config['bot-account']['type'],
       host: config.server.ip,
       port: config.server.port,
-      version: config.server.version,
+      version: '1.20.4',
    });
 
    bot.loadPlugin(pathfinder);
