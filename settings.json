@@ -2,7 +2,7 @@
   "bot-account": {
     "username": "SkyJr",
     "password": "",
-    "type": "mojang"
+    "type": "offline"
   },
 
   "server": {
