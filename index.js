@@ -12,8 +12,9 @@ app.get('/', (req, res) => {
   res.send('Bot is arrived')
 });
 
-app.listen(8000, () => {
-  console.log('server started');
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
 });
 
 function createBot() {
