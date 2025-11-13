@@ -32,7 +32,7 @@
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 200,
+      "repeat-delay": 20,
       "messages": [
         "/is warp herobestt1 afk"
       ]
