@@ -5,7 +5,10 @@ const config = require('./settings.json');
 
 const app = express();
 app.get('/', (req, res) => res.send('Bot is alive and running!'));
-app.listen(8000, () => console.log('✅ Express server started on port 8000.'));
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(`✅ Express server started on port ${PORT}.`);
+});
 
 function createBot() {
   const bot = mineflayer.createBot({
