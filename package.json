@@ -7,13 +7,12 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.19.0",
-    "mineflayer": "^4.22.0",
-    "mineflayer-pathfinder": "^2.6.1",
-    "minecraft-data": "^3.67.0",
-    "minecraft-protocol": "^1.50.0"
-  },
-  "engines": {
-    "node": "20.x"
-  }
+  "express": "^4.19.0",
+  "mineflayer": "4.23.0",
+  "mineflayer-pathfinder": "2.6.1",
+  "minecraft-data": "3.70.0",
+  "minecraft-protocol": "1.50.1"
+},
+"engines": {
+  "node": "20.x"
 }
