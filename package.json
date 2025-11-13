@@ -4,7 +4,7 @@
   "description": "A simple AFK bot for Minecraft using Mineflayer",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "npm install minecraft-data@3.70.0 mineflayer@4.23.0 minecraft-protocol@1.50.1 --force && node index.js"
   },
   "dependencies": {
     "express": "4.19.0",
